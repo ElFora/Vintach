@@ -7,7 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 	<link href="css/estilos.css" rel="stylesheet">
 
     <title>Vintage Store</title>
@@ -19,7 +20,7 @@
 
     <!-- Nav bar -->
 
-    <nav class="navbar navbar-expand-md navbar-dark" id="nav">
+<nav class="navbar navbar-expand-lg navbar-dark" id="nav">
   <a class="navbar-brand" href="#">VINTACH</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"></span>
@@ -51,11 +52,37 @@
         </li>
     </ul>
   </div>
+  </nav>
+    <!-- End Nav bar -->
 
-    <!-- Carrousel -->
-
-
-</nav>
+    <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="slide1">
+            <img src="images/cover.jpg" class="d-block w-100" alt="first slide">
+            </div>
+            <div class="carousel-item" id="slide2">
+            <img src="images/cover2.jpg" class="d-block w-100" alt="second slide">
+            </div>
+            <div class="carousel-item" id="slide3">
+            <img src="images/cover3.jpg" class="d-block w-100" alt="third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+    <!-- End Carousel -->
 
 </body>
 </html>
