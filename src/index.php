@@ -43,14 +43,16 @@
         <a class="nav-link" href="#">CHECKOUT</a>
       </li>
     </ul>
+    <div class="yellow-font">
     <ul class="navbar-nav" id="credentials">
-        <li class="nav-item active yellow">
+        <li class="nav-item active">
             <a class="nav-link" href="#">SIGN UP</a>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="#">LOGIN</a>
         </li>
     </ul>
+    </div>
   </div>
   </nav>
     <!-- End Nav bar -->
