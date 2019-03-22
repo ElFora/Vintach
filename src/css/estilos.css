@@ -12,7 +12,7 @@ body{
     color:white;
 }
 .navbar-brand{
-  color:white;
+  color:#FCD995;
   font-weight: bold;
   padding-left: 20px;
 }
@@ -22,10 +22,10 @@ body{
   float: right; 
 }
 
-#active a{
-  font-weight: bold;
-  opacity:1;
+.nav-item .yellow{
+  color:#FCD995;
 }
+
 #credentials{
   font-size: 13pt;
   font-weight: bold;
@@ -33,3 +33,7 @@ body{
   padding-right: 20px;
 }
 /* -- Carousel -- */
+
+carousel-inner {
+  height: 500px;
+}

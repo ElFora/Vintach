@@ -31,20 +31,20 @@
         <a class="nav-link" href="#">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">MUSIC</a>
+        <a class="nav-link" href="#">CASSETTES</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">FILM</a>
+        <a class="nav-link" href="#">VHS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">ELECTRONICS</a>
+        <a class="nav-link" href="#">PROFILE</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">DECOR</a>
+      <li class="nav-item yellow">
+        <a class="nav-link" href="#">CHECKOUT</a>
       </li>
     </ul>
     <ul class="navbar-nav" id="credentials">
-        <li class="nav-item active">
+        <li class="nav-item active yellow">
             <a class="nav-link" href="#">SIGN UP</a>
         </li>
         <li class="nav-item active">
@@ -64,13 +64,13 @@
             </ol>
         <div class="carousel-inner">
             <div class="carousel-item active" id="slide1">
-            <img src="images/cover.jpg" class="d-block w-100" alt="first slide">
+            <img src="images/cover/fotos_cover1.png" class="d-block w-100" alt="first slide">
             </div>
             <div class="carousel-item" id="slide2">
-            <img src="images/cover2.jpg" class="d-block w-100" alt="second slide">
+            <img src="images/cover/fotos_cover2.png" class="d-block w-100" alt="second slide">
             </div>
             <div class="carousel-item" id="slide3">
-            <img src="images/cover3.jpg" class="d-block w-100" alt="third slide">
+            <img src="images/cover/fotos_cover3.png" class="d-block w-100" alt="third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
