@@ -1,0 +1,24 @@
+{
+  "name": "vintach",
+  "version": "1.0.0",
+  "description": "docker build -t 'nombre' -f 'dockerfile' . #Como construir el contenedor y desplecarlo     docker -compose up",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElFora/Vintach.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElFora/Vintach/issues"
+  },
+  "homepage": "https://github.com/ElFora/Vintach#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "sass": "^1.17.3"
+  }
+}

@@ -9,7 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
-	<link href="css/estilos.css" rel="stylesheet">
+    <script src="./scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/jquery.breakpoints.min.js"></script>
+    <!-- <link href="css/custom.scss" rel="stylesheet"> -->
+    <link href="css/estilos.css" rel="stylesheet">
 
     <title>Vintage Store</title>
 </head>
@@ -20,7 +23,7 @@
 
     <!-- Nav bar -->
 
-<nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+<nav class="navbar navbar-expand-lg navbar-custom" id="nav">
   <a class="navbar-brand" href="#">VINTACH</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"></span>
@@ -28,7 +31,7 @@
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active" id="active">
-        <a class="nav-link" href="#">HOME</a>
+        <a class="nav-link" href="index.php">HOME</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">CASSETTES</a>
@@ -75,9 +78,17 @@
             </div>
             <div class="carousel-item" id="slide2">
             <img src="images/cover/fotos_cover2.png" class="d-block w-100" alt="second slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>NEW PRODUCT</h1>
+                <button class="boton" onclick="window.location.href = 'signup.php';">SHOP NOW</button>
+              </div>
             </div>
             <div class="carousel-item" id="slide3">
-            <img src="images/cover/fotos_cover3.png" class="d-block w-100" alt="third slide">
+                <img src="images/cover/fotos_cover3.png" class="d-block w-100" alt="third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>NEW PRODUCT</h1>
+                  <button class="boton-2" onclick="window.location.href = 'signup.php';">SHOP NOW</button>
+              </div>
             </div>
         </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

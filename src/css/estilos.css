@@ -27,12 +27,33 @@ body{
   color:#FCD995;
 }
 
-#credentials{
+#credentials a{
+  color:#FCD995 !important;
   font-size: 13pt;
   font-weight: bold;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 10px;
 }
+
+.navbar .navbar-expand-lg .navbar-custom a{
+  color:#FCD995 !important;
+}
+
+a {
+  color: #FFF8EB;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #FCD995 !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar-nav .ml-auto li a{
+  padding-right: 10px !important;
+}
+
 /* -- Carousel -- */
 
 .carousel{
@@ -49,23 +70,46 @@ body{
   border-radius: 0;
   background-color: #FCD995;
   color: #5B4350;
-  padding: 30px 30px !important;
+  padding: 15px 100px !important;
   font-size: 30px !important;
-  opacity: 1;
   transition: all 0.3s ease 0s;
   border: none;
 }
 
 .boton:hover {
   border-radius: 0;
-  background-color: #FCD995;
+  background-color: #EAC06E;
   color: #5B4350;
-  padding: 30px 30px !important;
+  padding: 15px 100px !important;
   font-size: 30px !important;
-  opacity: .7;
   transition: all 0.3s ease 0s;
   border: none;
 }
+
+.boton-2{
+  border-radius: 0;
+  background-color: #CE7E7D;
+  color: #FFF8EB;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  transition: all 0.3s ease 0s;
+  border: none;
+}
+
+.boton-2:hover {
+  border-radius: 0;
+  background-color: #C25D5C;
+  color: #FFF8EB;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  transition: all 0.3s ease 0s;
+  border: none;
+}
+
+#slide3 a{
+  color: #5B4350 !important;
+}
+
 .card, .btn, .form-control {
    border-radius: 0; 
    background-color: #FCD995;
