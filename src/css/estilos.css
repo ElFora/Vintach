@@ -10,21 +10,28 @@ body{
 #nav{
     background-color: #5B4350;
     font: georgia;
-    color:white;
+    color:#FFF8EB;
+}
+.navbar-nav{
+  margin-right: 10px;
 }
 .navbar-brand{
-  color:#FCD995;
-  font-weight: bold;
+  color:#FCD995 !important;
+  font-weight: bold !important;
   padding-left: 20px;
 }
 
 #navbarText .nav-link{
-  color: white;
+  color: #FFF8EB;
   float: right; 
 }
 
 .nav-item .custom a{
-  color:#FCD995;
+  color:#FFF8EB;
+}
+
+#active a{
+  color:#FCD995 !important;
 }
 
 #credentials a{
@@ -40,7 +47,7 @@ body{
 }
 
 a {
-  color: #FFF8EB;
+  color: #FFF8EB !important;
   text-decoration: none;
   background-color: transparent;
 }
@@ -74,6 +81,8 @@ a:hover {
   font-size: 30px !important;
   transition: all 0.3s ease 0s;
   border: none;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .boton:hover {
@@ -84,6 +93,8 @@ a:hover {
   font-size: 30px !important;
   transition: all 0.3s ease 0s;
   border: none;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .boton-2{
@@ -94,6 +105,8 @@ a:hover {
   font-size: 30px !important;
   transition: all 0.3s ease 0s;
   border: none;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .boton-2:hover {
@@ -104,9 +117,11 @@ a:hover {
   font-size: 30px !important;
   transition: all 0.3s ease 0s;
   border: none;
+  font-style: italic;
+  font-weight: bold;
 }
 
-#slide3 a{
+#slide3 h1{
   color: #5B4350 !important;
 }
 

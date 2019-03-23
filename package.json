@@ -18,7 +18,9 @@
   "homepage": "https://github.com/ElFora/Vintach#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "flexbox": "0.0.3",
     "jquery": "^3.3.1",
+    "popper": "^1.0.1",
     "sass": "^1.17.3"
   }
 }

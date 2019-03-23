@@ -23,7 +23,7 @@
 
     <!-- Nav bar -->
 
-<nav class="navbar navbar-expand-lg navbar-custom" id="nav">
+<nav class="navbar navbar-expand-lg navbar-dark" id="nav">
   <a class="navbar-brand" href="#">VINTACH</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
     <span class="navbar-toggler-icon"></span>
@@ -34,16 +34,16 @@
         <a class="nav-link" href="index.php">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">CASSETTES</a>
+        <a class="nav-link" href="cassettes.php">CASSETTES</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">VHS</a>
+        <a class="nav-link" href="vhs.php">VHS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">PROFILE</a>
+        <a class="nav-link" href="profile.php">PROFILE</a>
       </li>
-      <li class="nav-item custom">
-        <a class="nav-link" href="#">CHECKOUT</a>
+      <li class="nav-item">
+        <a class="nav-link" href="checkout.php">CHECKOUT</a>
       </li>
     </ul>
     <div class="yellow-font">
