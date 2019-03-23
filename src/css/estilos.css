@@ -130,3 +130,20 @@ a:hover {
    background-color: #FCD995;
    color:#5B4350;
   }
+
+/* -- Media queries -- */
+@media screen and (max-width: 1024px){
+  body:after {
+      content: "extra-large";
+  }
+}
+@media screen and (min-width: 768px){
+  boton{
+    padding: 15px 50px !important;
+    font-size: 20px !important;
+  }
+  boton:hover{
+    padding: 15px 50px !important;
+    font-size: 20px !important;
+  }
+}
