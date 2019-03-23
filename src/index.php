@@ -39,7 +39,7 @@
       <li class="nav-item">
         <a class="nav-link" href="#">PROFILE</a>
       </li>
-      <li class="nav-item yellow">
+      <li class="nav-item custom">
         <a class="nav-link" href="#">CHECKOUT</a>
       </li>
     </ul>
@@ -58,6 +58,7 @@
     <!-- End Nav bar -->
 
     <!-- Carousel -->
+    <div class="carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -67,6 +68,10 @@
         <div class="carousel-inner">
             <div class="carousel-item active" id="slide1">
             <img src="images/cover/fotos_cover1.png" class="d-block w-100" alt="first slide">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>OLD IS NEW</h1>
+                <button class="boton" onclick="window.location.href = 'signup.php';">BECOME VINTACHE</button>
+              </div>
             </div>
             <div class="carousel-item" id="slide2">
             <img src="images/cover/fotos_cover2.png" class="d-block w-100" alt="second slide">
@@ -75,16 +80,16 @@
             <img src="images/cover/fotos_cover3.png" class="d-block w-100" alt="third slide">
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
         </div>
+      </div>
     <!-- End Carousel -->
-
 </body>
 </html>

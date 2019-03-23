@@ -1,6 +1,7 @@
 body{
   font-family: georgia;
   font-style: italic;
+  background-color: #5B4350;
 }
 .container{
   height: 400px;
@@ -22,7 +23,7 @@ body{
   float: right; 
 }
 
-.yellow-font ul li a{
+.nav-item .custom a{
   color:#FCD995;
 }
 
@@ -34,6 +35,39 @@ body{
 }
 /* -- Carousel -- */
 
-carousel-inner {
-  height: 500px;
+.carousel{
+  width: 100%;
+  height: auto;
 }
+
+.carousel-caption{
+  padding-top: auto;
+  padding-bottom: 300px;
+}
+
+.boton{
+  border-radius: 0;
+  background-color: #FCD995;
+  color: #5B4350;
+  padding: 30px 30px !important;
+  font-size: 30px !important;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+  border: none;
+}
+
+.boton:hover {
+  border-radius: 0;
+  background-color: #FCD995;
+  color: #5B4350;
+  padding: 30px 30px !important;
+  font-size: 30px !important;
+  opacity: .7;
+  transition: all 0.3s ease 0s;
+  border: none;
+}
+.card, .btn, .form-control {
+   border-radius: 0; 
+   background-color: #FCD995;
+   color:#5B4350;
+  }
