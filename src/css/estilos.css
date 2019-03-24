@@ -215,9 +215,6 @@ body{
   margin: 20px 90px
 }
 
-
-
-
 /* Log In */
 
 .tittle-login h1{
@@ -261,6 +258,15 @@ body{
   align-content: center;
 }
 
+.log-in .rectangle2{
+  height: 20px;
+  width: 140px;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -10px;
+  background-color: #5B4350;
+  z-index: -1;
+}
 
 .checkout-title{
   margin-top: 100px;
