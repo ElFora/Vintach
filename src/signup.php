@@ -22,7 +22,7 @@
 
     <title>Vintache</title>
 </head>
-<body background="images/fotos_signup.png">
+<body background="images/fotos_signup.png" style="background-repeat: no-repeat; background-size:110%;">
     
     <!-- Nav bar -->
     <?php include("includes/nav.php");?>
@@ -30,6 +30,14 @@
 
     <!-- Container -->
 <div class="container sign-up">
+  <!-- tittle -->
+  <div class="row tittle-signup">
+    <div class="col-lg-12">
+      <h1>SIGN UP</h1>
+      <div class="rectangle"></div>
+  </div>
+</div>
+
   <div class="row">
     <div class="col-lg-8">
       <div class="sign-up">
