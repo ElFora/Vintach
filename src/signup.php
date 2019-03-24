@@ -65,6 +65,7 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
+              <button type="button" class="btn btn-custom">become a member</button>
           </form>
       </div>
     </div>  
@@ -76,12 +77,12 @@
 </body>
 </html>
 
-<!-- <script>
+<script>
 $(document).ready(function(){
     $("body").on({
         mouseenter: function(){
-            $(".bg").css("background-image", "url('/images/fotos_signup.png')", "no-repeat", "width=100%");
+            $(this).css("background-color", "#C25D5C");
         },  
     });    
 });
-</script> -->
+</script>
