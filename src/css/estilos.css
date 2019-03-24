@@ -241,7 +241,6 @@ a:hover {
   background-color: #FCD995;
   color: #5B4350;
   font-size: 15px !important;
-  margin: 20px, 50px !important;
   transition: all 0.3s ease 0s;
   border: none;
   font-style: italic;
@@ -255,7 +254,6 @@ a:hover {
   background-color: #EAC06E;
   color: #5B4350;
   font-size: 15px !important;
-  margin: 20px, 50px !important;
   transition: all 0.3s ease 0s;
   border: none;
   font-style: italic;
@@ -358,3 +356,99 @@ a:hover {
   text-align: center;
 }
 
+/*-- Cassettes --*/
+
+#cassettes-cover { 
+  position: relative; 
+    display: block;
+    background-image: url(../images/cassette/fotos_cassettes.png);
+      background-size:cover; 
+      background-repeat:no-repeat;
+    text-align: center;
+  }
+
+
+#cassettes-cover .title-cassettes h1{
+  padding-top: 50px;
+  color: #FCD995 ;
+  font-weight: bold;
+  float: left;
+  z-index: 4;
+}
+
+#cassettes-cover .rectangle3 {
+  box-sizing: border-box;
+  height: 25px;
+  width: 150px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -10px;
+  background-color: #5B4350;
+}
+
+.cassettes-trending{
+  background-color: #FFF8EB;
+  vertical-align: center;
+  padding: 100px;
+}
+
+.trending-title h1{
+  color: #5B4350;
+  vertical-align: center;
+}
+
+.cassettes-trending img{
+  margin-bottom: 30px;
+}
+
+.cassettes-trending .rectangle4 {
+  box-sizing: border-box;
+  height: 25px;
+  width: 150px;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -10px;
+  background-color: #CE7E7D;
+}
+
+.cassette{
+  text-align: center;
+}
+
+.cassette h4{
+  color: #5B4350;
+  font-weight: bold;
+}
+
+.cassette h5{
+  color: #5B4350;
+}
+
+.cassette h6{
+  color: #CE7E7D;
+}
+
+.cassettes-catalog{
+  padding-top:50px;
+  padding-bottom: 30px;
+  background-color: #CE7E7D;
+}
+
+.cassette-item{
+  text-align: center;
+}
+
+.cassette-item h4{
+  margin-top: 20px;
+  color: #FFF8EB;
+  font-weight: bold;
+}
+
+.cassette-item h5{
+  color: #FFF8EB;
+}
+.cassette-item h6{
+  color: #FCD995;
+}
+
+/* -- VHS -- */
