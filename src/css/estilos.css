@@ -186,6 +186,7 @@ carousel-inner {
 
 
 
+
 /* Log In */
 
 .tittle-login h1{
@@ -229,14 +230,25 @@ carousel-inner {
   align-content: center;
 }
 
-.log-in .rectangle2 {
+
+.checkout-title{
+  margin-top: 100px;
+  color:#5B4350;
+}
+
+.checkout{
+  background-color:#FFF8EB;
+}
+
+.checkout-title .rectangle{
   height: 24px;
   width: 141px;
   position: absolute;
   margin-top: -50px;
   margin-left: -10px;
-  background-color: #5B4350;
+  background-color: #CE7E7D;
   z-index: -1;
+
 }
 
 .log-in .btn-login{
@@ -367,4 +379,24 @@ carousel-inner {
   color: #FCD995;
 }
 
-/* -- VHS -- */
+/* CHECKOUT*/
+
+.checkout{
+  background-color:#FFF8EB;
+}
+.checkout-title{
+  margin-top:100px;
+  color:#5B4350;
+
+}
+
+.checkout .rectangle{
+  height: 24px;
+  width: 141px;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -10px;
+  background-color: #CE7E7D;
+  z-index: -1;
+  
+}

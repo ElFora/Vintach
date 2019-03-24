@@ -13,4 +13,27 @@
 
     <title>VHS - Vintach</title>
 </head>
+
+<nav>
+<?php include("includes/nav.php");?>
+</nav>
+
+<body class="checkout">    
+<div class="container">
+<div class="row">
+<div class="checkout-title">
+<h1>CHECKOUT</h1>
+<div class="rectangle"></div>
+</div>    
+</div>
+</div>
+
+<div class="row">
+
+<?php
+
+?>
+
+</div>
+</body>
 </html>
