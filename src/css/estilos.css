@@ -1,13 +1,7 @@
 body{
   font-family: georgia;
   font-style: italic;
-  background-size: cover;
-  /* background-color: #5B4350; */
 }
-/* body .index{
-  background-color: #5B4350;
-} */
-
 .container{
   height: 400px;
 }
@@ -15,114 +9,36 @@ body{
 #nav{
     background-color: #5B4350;
     font: georgia;
-    color:#FFF8EB;
-}
-.navbar-nav{
-  margin-right: 10px;
+    color:white;
 }
 .navbar-brand{
-  color:#FCD995 !important;
-  font-weight: bold !important;
+  color:#FCD995;
+  font-weight: bold;
   padding-left: 20px;
 }
 
 #navbarText .nav-link{
-  color: #FFF8EB;
+  color: white;
   float: right; 
 }
 
-.nav-item .custom a{
-  color:#FFF8EB;
+.nav-item .yellow{
+  color:#FCD995;
 }
 
-#active a{
-  color:#FCD995 !important;
-}
-
-#credentials a{
-  color:#FCD995 !important;
+#credentials{
   font-size: 13pt;
   font-weight: bold;
-  padding-left: 5px;
-  padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
 }
-
-.navbar .navbar-expand-lg .navbar-custom a{
-  color:#FCD995 !important;
-}
-
-a {
-  color: #FFF8EB !important;
-  text-decoration: none;
-  background-color: transparent;
-}
-a:hover {
-  color: #FCD995 !important;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-.navbar-nav .ml-auto li a{
-  padding-right: 10px !important;
-}
-
 /* -- Carousel -- */
 
-.carousel{
-  width: 100%;
-  height: auto;
+carousel-inner {
+  height: 500px;
 }
 
-.carousel-caption{
-  padding-top: auto;
-  padding-bottom: 300px;
-}
-
-/* .btn .btn-primary{
-  background-color: #FCD995 !important;
-  color: #5B4350 !important;
-  padding: 15px 100px !important;
-  font-size: 30px !important;
-  font-style: italic;
-  font-weight: bold;
-  border:none;
-}
-
-.btn .btn-primary:hover{
-  background-color: #EAC06E !important;
-  color: #5B4350 !important;
-  padding: 15px 100px !important;
-  font-size: 30px !important;
-  font-style: italic;
-  font-weight: bold;
-  border:none;
-} */
-
-
-.boton{
-  border-radius: 0;
-  background-color: #FCD995;
-  color: #5B4350;
-  padding: 15px 100px !important;
-  font-size: 30px !important;
-  transition: all 0.3s ease 0s;
-  border: none;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.boton:hover {
-  border-radius: 0;
-  background-color: #EAC06E;
-  color: #5B4350;
-  padding: 15px 100px !important;
-  font-size: 30px !important;
-  transition: all 0.3s ease 0s;
-  border: none;
-  font-style: italic;
-  font-weight: bold;
-}
-
+<<<<<<< Updated upstream
 .boton-2{
   border-radius: 0;
   background-color: #CE7E7D;
@@ -208,10 +124,9 @@ a:hover {
   color: #EAC06E !important;
   font-weight: bold;
   font-size: 20px;
-  text-align: center;
-  border:none;
-  width: 100%;
 }
+
+
 
 .sign-up .form-group input{
   background-color: #5B4350 !important;
@@ -338,6 +253,7 @@ a:hover {
   font-weight: bold;
   float:right;
 }
+
 
 .log-in .btn-login:hover{
   text-align: center;
