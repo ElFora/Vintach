@@ -181,6 +181,7 @@ a:hover {
 .tittle-signup h1{
   margin-top: 50px;
   color: #FCD995 ;
+  font-weight: bold;
 }
 
 .container .sign-up{
@@ -219,6 +220,8 @@ a:hover {
   border-radius: 30px !important;
   size: 50px, 20px;
   width: 100%;
+  text-align: center;
+  align-content: center;
 }
 
 .sign-up .rectangle {
@@ -232,11 +235,12 @@ a:hover {
 }
 
 .sign-up .btn-custom{
+  text-align: center;
   border-radius: 30px !important;
   vertical-align: center;
   background-color: #FCD995;
   color: #5B4350;
-  font-size: 20px !important;
+  font-size: 15px !important;
   margin: 20px, 50px !important;
   transition: all 0.3s ease 0s;
   border: none;
@@ -245,14 +249,112 @@ a:hover {
 }
 
 .sign-up .btn-custom:hover{
+  text-align: center;
   border-radius: 30px !important;
   vertical-align: center;
   background-color: #EAC06E;
   color: #5B4350;
-  font-size: 20px !important;
-  margin: 50px !important;
+  font-size: 15px !important;
+  margin: 20px, 50px !important;
   transition: all 0.3s ease 0s;
   border: none;
   font-style: italic;
   font-weight: bold;
 }
+.sign-up .login-link a{
+  text-align: center;
+  align-content: center;
+  margin-left: 70px;
+}
+
+.register-signup{
+  margin: 20px 90px
+}
+
+
+
+/* Log In */
+
+.tittle-login h1{
+  margin-top: 50px;
+  color: #CE7E7D ;
+  font-weight: bold;
+}
+
+.container .log-in{
+  margin: 100px;
+  /* width: 100%;
+  height: auto; */
+}
+
+.log-in-form{
+  color: #FFF8EB;
+  float:center;
+  border:none;
+  vertical-align: center;
+  width: 100%;
+  margin-top: 90px;
+  margin-left: 15px;
+}
+.log-in .form-group label{
+  color: #5B4350 !important;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border:none;
+  width: 100%;
+}
+
+.log-in .form-group input{
+  background-color: #CE7E7D !important;
+  color: #FFF8EB !important;
+  border:none;
+  border-radius: 30px !important;
+  size: 50px, 20px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.log-in .rectangle2 {
+  height: 24px;
+  width: 141px;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -10px;
+  background-color: #5B4350;
+  z-index: -1;
+}
+
+.log-in .btn-login{
+  text-align: center;
+  border-radius: 30px !important;
+  vertical-align: center;
+  background-color: #5B4350;
+  color: #FFF8EB;
+  font-size: 20px !important;
+  padding: 5px 50px;
+  transition: all 0.3s ease 0s;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+  float:right;
+}
+
+.log-in .btn-login:hover{
+  text-align: center;
+  border-radius: 30px !important;
+  vertical-align: center;
+  background-color: #5B4350;
+  color: #FFF8EB;
+  font-size: 20px !important;
+  padding: 5px 50px;
+  transition: all 0.3s ease 0s;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+}
+.log-in .login-link a{
+  text-align: center;
+}
+

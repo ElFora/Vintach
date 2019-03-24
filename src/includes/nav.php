@@ -27,10 +27,10 @@
     <div class="yellow-font">
     <ul class="navbar-nav" id="credentials">
         <li class="nav-item active">
-            <a class="nav-link" href="#">SIGN UP</a>
+            <a class="nav-link" href="signup.php">SIGN UP</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">LOGIN</a>
+            <a class="nav-link" href="login.php">LOGIN</a>
         </li>
     </ul>
     </div>
