@@ -1,8 +1,12 @@
 body{
   font-family: georgia;
   font-style: italic;
-  background-color: #5B4350;
+  /* background-color: #5B4350; */
 }
+/* body .index{
+  background-color: #5B4350;
+} */
+
 .container{
   height: 400px;
 }
@@ -153,7 +157,7 @@ a:hover {
   }
 
 /* -- Media queries -- */
-/* @media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px){
   boton{
     padding: 15px 50px !important;
     font-size: 20px !important;
@@ -162,4 +166,40 @@ a:hover {
     padding: 15px 50px !important;
     font-size: 20px !important;
   }
+}
+
+/* Sign up */
+
+/* body .sign-up{
+  background-image: #C25D5C !important;
 } */
+.container .sign-up{
+  margin: 100px;
+}
+
+.container .sign-up img{
+  width: 80%;
+  height: auto;
+}
+
+.sign-up-form{
+  color: #FFF8EB;
+  float:right;
+  border:none;
+  vertical-align: center;
+}
+.sign-up .form-group label{
+  color: #EAC06E !important;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border:none;
+}
+
+.sign-up .form-group input{
+  background-color: #5B4350 !important;
+  color: #FFF8EB !important;
+  border:none;
+  border-radius: 12px;
+  size: 50px, 20px;
+}
