@@ -3,10 +3,10 @@
   include 'db.php';
 
   ///asignando los campos del formulario a una variable
-  $nombre = $_POST['nombre'];
-  $direccion = $_POST['adress'];
-  $correo = $_POST['email'];
-  $contrasena = $_POST['pswrd'];
+  $nombre = $_POST['user-name'];
+  $direccion = $_POST['user-address'];
+  $correo = $_POST['user-mail'];
+  $contrasena = $_POST['user-pwd'];
   $contrasena = MD5($contrasena);
 
   ///seleccionar los renglones de la tabla
