@@ -67,7 +67,7 @@
                 <input type="password" class="form-control" name="user-pwd" id="exampleInputPassword1" placeholder="Password">
               </div>
               <div class="register-signup">
-                <button type="button" name="register-btn" class="btn btn-custom">become a member</button>
+                <button type="submit" name="register-btn" class="btn btn-custom">become a member</button>
               </div>
               <a href="login.php" class="login-link">Already a member? Log in!</a>
           </form>

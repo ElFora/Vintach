@@ -9,24 +9,25 @@ body{
 #nav{
     background-color: #5B4350;
     font: georgia;
-    color:white;
+    color:#FFF8EB;
 }
 .navbar-brand{
-  color:#FCD995;
+  color:#FCD995 !important;
   font-weight: bold;
   padding-left: 20px;
 }
 
 #navbarText .nav-link{
-  color: white;
+  color: #FFF8EB;
   float: right; 
 }
 
-.nav-item .yellow{
-  color:#FCD995;
+.nav-link .active{
+  color:#FCD995 !important;
 }
 
 #credentials{
+  color:#FCD995 !important;
   font-size: 13pt;
   font-weight: bold;
   padding-left: 10px;
@@ -38,7 +39,6 @@ carousel-inner {
   height: 500px;
 }
 
-<<<<<<< Updated upstream
 .boton-2{
   border-radius: 0;
   background-color: #CE7E7D;
@@ -174,10 +174,10 @@ carousel-inner {
   font-style: italic;
   font-weight: bold;
 }
-.sign-up .login-link a{
-  text-align: center;
-  align-content: center;
-  margin-left: 70px;
+.sign-up a{
+  color: #ffff;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .register-signup{
