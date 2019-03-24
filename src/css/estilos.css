@@ -153,7 +153,7 @@ a:hover {
   }
 
 /* -- Media queries -- */
-@media screen and (max-width: 1000px){
+/* @media screen and (max-width: 1000px){
   boton{
     padding: 15px 50px !important;
     font-size: 20px !important;
@@ -162,4 +162,4 @@ a:hover {
     padding: 15px 50px !important;
     font-size: 20px !important;
   }
-}
+} */
