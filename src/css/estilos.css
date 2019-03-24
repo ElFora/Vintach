@@ -22,7 +22,7 @@ body{
   float: right; 
 }
 
-.nav-link .active{
+.navbar-nav .nav-link .active{
   color:#FCD995 !important;
 }
 
