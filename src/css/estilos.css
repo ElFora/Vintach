@@ -171,9 +171,13 @@ a:hover {
 
 /* Sign up */
 
-/* body .sign-up{
-  background-image: #C25D5C !important;
+/* body .signup{
+  /* background: url(../images/fotos_signup.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; 
 } */
+
 .tittle-signup h1{
   margin-top: 50px;
   color: #FCD995 ;
@@ -196,7 +200,7 @@ a:hover {
   border:none;
   vertical-align: center;
   width: 100%;
-  margin-top: 110px;
+  margin-top: 90px;
   margin-left: 15px;
 }
 .sign-up .form-group label{
@@ -212,7 +216,7 @@ a:hover {
   background-color: #5B4350 !important;
   color: #FFF8EB !important;
   border:none;
-  border-radius: 12px;
+  border-radius: 30px !important;
   size: 50px, 20px;
   width: 100%;
 }
@@ -224,16 +228,16 @@ a:hover {
   margin-top: -50px;
   margin-left: -10px;
   background-color: #5B4350;
-  z-index: -10px;
   z-index: -1;
 }
 
 .sign-up .btn-custom{
-  border-radius: 12px;
+  border-radius: 30px !important;
   vertical-align: center;
   background-color: #FCD995;
   color: #5B4350;
   font-size: 20px !important;
+  margin: 20px, 50px !important;
   transition: all 0.3s ease 0s;
   border: none;
   font-style: italic;
@@ -241,11 +245,12 @@ a:hover {
 }
 
 .sign-up .btn-custom:hover{
-  border-radius: 12px;
+  border-radius: 30px !important;
   vertical-align: center;
   background-color: #EAC06E;
   color: #5B4350;
   font-size: 20px !important;
+  margin: 50px !important;
   transition: all 0.3s ease 0s;
   border: none;
   font-style: italic;

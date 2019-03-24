@@ -1,5 +1,6 @@
 <?php 
-   
+  //  session_start();
+  //  $db = "mysqli_connect"('localhost', 'root', 'authentication');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +23,8 @@
 
     <title>Vintache</title>
 </head>
-<body background="images/fotos_signup.png" style="background-repeat: no-repeat; background-size:110%;">
-    
+<!-- <body background="images/fotos_signup.png" style="background-repeat: no-repeat; background-size:110%;"> -->
+<body class="signup"> 
     <!-- Nav bar -->
     <?php include("includes/nav.php");?>
     <!-- End Nav bar -->
@@ -51,21 +52,21 @@
           <form class="sign-up-form">
               <div class="form-group">
                 <label for="formGroupExampleInput">Name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                <input type="text" class="form-control" name="user-name" id="formGroupExampleInput" placeholder="Name">
               </div>
               <div class="form-group">
                 <label for="formGroupExampleInput">Address</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                <input type="text" class="form-control" name="user-address" id="formGroupExampleInput" placeholder="Address">
               </div>
               <div class="form-group">
                   <label for="exampleFormControlInput1">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  <input type="email" class="form-control" name="user-mail" id="exampleFormControlInput1" placeholder="name@example.com">
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <input type="password" class="form-control" name="user-pwd" id="exampleInputPassword1" placeholder="Password">
               </div>
-              <button type="button" class="btn btn-custom">become a member</button>
+              <button type="button" name="register-btn" class="btn btn-custom">become a member</button>
           </form>
       </div>
     </div>  
