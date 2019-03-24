@@ -74,6 +74,7 @@
               <div class="carousel-caption d-none d-md-block">
                 <h1>OLD IS NEW</h1>
                 <button class="boton" onclick="window.location.href = 'signup.php';">BECOME VINTACHE</button>
+                <!-- <button type="button" class="btn btn-primary btn-lg">BECOME VINTACHE</button> -->
               </div>
             </div>
             <div class="carousel-item" id="slide2">

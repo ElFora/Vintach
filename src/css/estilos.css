@@ -73,6 +73,27 @@ a:hover {
   padding-bottom: 300px;
 }
 
+/* .btn .btn-primary{
+  background-color: #FCD995 !important;
+  color: #5B4350 !important;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  font-style: italic;
+  font-weight: bold;
+  border:none;
+}
+
+.btn .btn-primary:hover{
+  background-color: #EAC06E !important;
+  color: #5B4350 !important;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  font-style: italic;
+  font-weight: bold;
+  border:none;
+} */
+
+
 .boton{
   border-radius: 0;
   background-color: #FCD995;
@@ -132,12 +153,7 @@ a:hover {
   }
 
 /* -- Media queries -- */
-@media screen and (max-width: 1024px){
-  body:after {
-      content: "extra-large";
-  }
-}
-@media screen and (min-width: 768px){
+@media screen and (max-width: 1000px){
   boton{
     padding: 15px 50px !important;
     font-size: 20px !important;
