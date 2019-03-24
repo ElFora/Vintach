@@ -17,11 +17,8 @@
     <!-- <link href="css/custom.scss" rel="stylesheet"> -->
     <link href="css/estilos.css" rel="stylesheet">
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/png" href="icons/favicon.png"/>
-    <link rel="shortcut icon" type="image/png" href="http://index.php/favicon.png"/>
-
-
-    <title>CASSETTES</title>
+    <link rel="shortcut icon" type="image/png" href="src/icons/favicon.png"/>
+    <title>Cassettes</title>
 </head>
 <body>
     

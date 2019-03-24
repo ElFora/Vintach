@@ -206,7 +206,7 @@ body{
   font-weight: bold;
 }
 .sign-up a{
-  color: #ffff;
+  color: #FFF8EB;
   text-decoration: none;
   background-color: transparent;
 }
@@ -436,4 +436,47 @@ body{
   background-color: #CE7E7D;
   z-index: -1;
   
+}
+
+/* PROFILE */
+
+.container .profile{
+  margin: 100px;
+  /* width: 100%;
+  height: auto; */
+}
+
+.container .profile img{
+  width: 80%;
+  height: auto;
+}
+
+.profile-form{
+  color: #FFF8EB;
+  float:right;
+  border:none;
+  vertical-align: center;
+  width: 100%;
+  margin-top: 90px;
+  margin-left: 15px;
+}
+.profile .form-group label{
+  color: #5B4350 !important;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.profile .form-group input{
+  pointer-events: none;
+  background-color: #FCD995;
+  border-color: #CE7E7D;
+  border-width: 2px;
+  color: #FFF8EB !important;
+  border:none;
+  border-radius: 30px !important;
+  size: 50px, 20px;
+  width: 100%;
+  text-align: center;
+  align-content: center;
 }
