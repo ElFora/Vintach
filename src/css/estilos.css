@@ -1,7 +1,13 @@
 body{
   font-family: georgia;
   font-style: italic;
+  background-size: cover;
+  /* background-color: #5B4350; */
 }
+/* body .index{
+  background-color: #5B4350;
+} */
+
 .container{
   height: 400px;
 }
@@ -9,31 +15,239 @@ body{
 #nav{
     background-color: #5B4350;
     font: georgia;
-    color:white;
+    color:#FFF8EB;
+}
+.navbar-nav{
+  margin-right: 10px;
 }
 .navbar-brand{
-  color:#FCD995;
-  font-weight: bold;
+  color:#FCD995 !important;
+  font-weight: bold !important;
   padding-left: 20px;
 }
 
 #navbarText .nav-link{
-  color: white;
+  color: #FFF8EB;
   float: right; 
 }
 
-.nav-item .yellow{
-  color:#FCD995;
+.nav-item .custom a{
+  color:#FFF8EB;
 }
 
-#credentials{
+#active a{
+  color:#FCD995 !important;
+}
+
+#credentials a{
+  color:#FCD995 !important;
   font-size: 13pt;
   font-weight: bold;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 10px;
 }
+
+.navbar .navbar-expand-lg .navbar-custom a{
+  color:#FCD995 !important;
+}
+
+a {
+  color: #FFF8EB !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #FCD995 !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar-nav .ml-auto li a{
+  padding-right: 10px !important;
+}
+
 /* -- Carousel -- */
 
-carousel-inner {
-  height: 500px;
+.carousel{
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption{
+  padding-top: auto;
+  padding-bottom: 300px;
+}
+
+/* .btn .btn-primary{
+  background-color: #FCD995 !important;
+  color: #5B4350 !important;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  font-style: italic;
+  font-weight: bold;
+  border:none;
+}
+
+.btn .btn-primary:hover{
+  background-color: #EAC06E !important;
+  color: #5B4350 !important;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  font-style: italic;
+  font-weight: bold;
+  border:none;
+} */
+
+
+.boton{
+  border-radius: 0;
+  background-color: #FCD995;
+  color: #5B4350;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  transition: all 0.3s ease 0s;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.boton:hover {
+  border-radius: 0;
+  background-color: #EAC06E;
+  color: #5B4350;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  transition: all 0.3s ease 0s;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.boton-2{
+  border-radius: 0;
+  background-color: #CE7E7D;
+  color: #FFF8EB;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  transition: all 0.3s ease 0s;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.boton-2:hover {
+  border-radius: 0;
+  background-color: #C25D5C;
+  color: #FFF8EB;
+  padding: 15px 100px !important;
+  font-size: 30px !important;
+  transition: all 0.3s ease 0s;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#slide3 h1{
+  color: #5B4350 !important;
+}
+
+.card, .btn, .form-control {
+   border-radius: 0; 
+   background-color: #FCD995;
+   color:#5B4350;
+  }
+
+/* -- Media queries -- */
+@media screen and (max-width: 1000px){
+  boton{
+    padding: 15px 50px !important;
+    font-size: 20px !important;
+  }
+  boton:hover{
+    padding: 15px 50px !important;
+    font-size: 20px !important;
+  }
+}
+
+/* Sign up */
+
+/* body .sign-up{
+  background-image: #C25D5C !important;
+} */
+.tittle-signup h1{
+  margin-top: 50px;
+  color: #FCD995 ;
+}
+
+.container .sign-up{
+  margin: 100px;
+  /* width: 100%;
+  height: auto; */
+}
+
+.container .sign-up img{
+  width: 80%;
+  height: auto;
+}
+
+.sign-up-form{
+  color: #FFF8EB;
+  float:right;
+  border:none;
+  vertical-align: center;
+  width: 100%;
+  margin-top: 110px;
+  margin-left: 15px;
+}
+.sign-up .form-group label{
+  color: #EAC06E !important;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border:none;
+  width: 100%;
+}
+
+.sign-up .form-group input{
+  background-color: #5B4350 !important;
+  color: #FFF8EB !important;
+  border:none;
+  border-radius: 12px;
+  size: 50px, 20px;
+  width: 100%;
+}
+
+.sign-up .rectangle {
+  height: 24px;
+  width: 141px;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -10px;
+  background-color: #5B4350;
+  z-index: -10px;
+  z-index: -1;
+}
+
+.sign-up .btn-custom{
+  border-radius: 12px;
+  vertical-align: center;
+  background-color: #FCD995;
+  color: #5B4350;
+  font-size: 20px !important;
+  transition: all 0.3s ease 0s;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.sign-up .btn-custom:hover{
+  border-radius: 12px;
+  vertical-align: center;
+  background-color: #EAC06E;
+  color: #5B4350;
+  font-size: 20px !important;
+  transition: all 0.3s ease 0s;
+  border: none;
+  font-style: italic;
+  font-weight: bold;
 }
