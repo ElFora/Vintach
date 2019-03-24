@@ -48,7 +48,7 @@
         </div>  
     </div>
     <div class="col-lg-4">
-      <div class="form-thing">
+      <div class="form-thing" action="alta.php" method="post">
           <form class="sign-up-form">
               <div class="form-group">
                 <label for="formGroupExampleInput">Name</label>
