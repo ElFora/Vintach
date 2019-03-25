@@ -56,15 +56,15 @@
               </div>
               <div class="form-group">
                 <label for="formGroupExampleInput">Address</label>
-                <input type="text" class="form-control" name="user-address" id="formGroupExampleInput" placeholder="Address">
+                <input type="text" class="form-control" name="user-address" id="formGroupExampleInput" placeholder="Address" >
               </div>
               <div class="form-group">
                   <label for="exampleFormControlInput1">Email</label>
-                  <input type="email" class="form-control" name="user-mail" id="exampleFormControlInput1" placeholder="name@example.com">
+                  <input type="email" class="form-control" name="user-mail" id="exampleFormControlInput1" placeholder="name@example.com" >
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" name="user-pwd" id="exampleInputPassword1" placeholder="Password">
+                <input type="password" class="form-control" name="user-pwd" id="exampleInputPassword1" placeholder="Password" >
               </div>
               <div class="register-signup">
                 <button type="submit" name="register-btn" class="btn btn-custom">become a member</button>

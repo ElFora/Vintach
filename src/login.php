@@ -43,11 +43,11 @@
             <form class="log-in-form" action="sesion.php" method="post">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Email</label>
-                    <input type="email" class="form-control" name="user-mail" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control" name="user-mail" id="exampleFormControlInput1" placeholder="name@example.com" value="<?php echo $_SESSION['email']; ?>">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" name="user-pwd" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" class="form-control" name="user-pwd" id="exampleInputPassword1" placeholder="Password" value="<?php echo $_SESSION['pswrd']; ?>">
                 </div>
                 <div class="row">
                   <div class="col-lg-7 col-md-8 col-sm-8 col-xs-4">
