@@ -31,7 +31,7 @@
 <div class="row">
 
 <?php
-
+echo('HOLA PLEBADA!')
 ?>
 
 </div>
