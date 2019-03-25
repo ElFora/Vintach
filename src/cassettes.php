@@ -18,7 +18,7 @@
     <link href="css/estilos.css" rel="stylesheet">
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="src/icons/favicon.png"/>
-    <title>Cassettes</title>
+    <title>CASSETTES</title>
 </head>
 <body>
     
@@ -30,10 +30,8 @@
   <div class="fullscreen" id="cassettes-cover">
 		<div class="container">		
 			<div class="row title-cassettes">
-				<div class="col-md-12 col-xs-12">
 						<h1> CASSETTES </h1>
 						<div class="rectangle3"></div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -43,7 +41,6 @@
 		<div class="row trending-title">
 			<div class="col-lg-12">
 				<h1>TRENDING NOW</h1>
-				<div class="rectangle4"></div>
 				<br><br>
 		</div>
 	</div>

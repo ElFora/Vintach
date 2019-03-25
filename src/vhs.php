@@ -33,10 +33,8 @@
   <div class="fullscreen" id="vhs-cover">
 		<div class="container">		
 			<div class="row title-vhs">
-				<div class="col-md-12 col-xs-12">
 						<h1> VHS </h1>
 						<div class="rectangle3"></div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -46,7 +44,6 @@
 		<div class="row trending-title">
 			<div class="col-lg-12">
 				<h1>TRENDING NOW</h1>
-				<div class="rectangle4"></div>
 				<br><br>
 		</div>
 	</div>
