@@ -21,7 +21,7 @@
     <link rel="shortcut icon" type="image/png" href="http://index.php/favicon.png"/>
 
 
-    <title>VHSs - VINTACH</title>
+    <title>VHS</title>
 </head>
 <body>
     

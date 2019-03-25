@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/png" href="icons/favicon.png"/>
     <link rel="shortcut icon" type="image/png" href="http://index.php/favicon.png"/>
 
-    <title>Vintache</title>
+    <title>Profile</title>
 </head>
 <body class="signup"> 
     <!-- Nav bar -->

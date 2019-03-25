@@ -40,7 +40,7 @@
     <div class="row">
       <div class="col-lg-12">
           <div class="form-thing">
-            <form class="log-in-form">
+            <form class="log-in-form" action="sesion.php" method="post">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Email</label>
                     <input type="email" class="form-control" name="user-mail" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="row">
                   <div class="col-lg-7 col-md-8 col-sm-8 col-xs-4">
-                  <button type="button" name="login-btn" class="btn btn-login">login</button>
+                  <button type="submit" name="login-btn" class="btn btn-login">login</button>
                 </div>
                 </div>  
               </div>

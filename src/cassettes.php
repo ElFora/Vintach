@@ -18,7 +18,7 @@
     <link href="css/estilos.css" rel="stylesheet">
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="src/icons/favicon.png"/>
-    <title>CASSETTES</title>
+    <title>Cassettes</title>
 </head>
 <body>
     
