@@ -57,8 +57,8 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" name="user-pwd" readonly class="form-control-plaintext" id="exampleInputPassword1" placeholder="Password">
               </div>
-              <div class="register-signup">
-                <button type="button" name="register-btn" class="btn btn-custom">edit profile</button>
+              <div class="edit-profile">
+                <button type="button" name="register-btn" class="btn btn-edit">edit profile</button>
               </div>
           </form>
       </div>

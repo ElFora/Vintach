@@ -451,6 +451,11 @@ body{
   height: auto;
 }
 
+.form-group {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 .profile-form{
   color: #FFF8EB;
   float:right;
@@ -465,6 +470,7 @@ body{
   font-weight: bold;
   font-size: 20px;
   text-align: center;
+  align-content: center;
 }
 
 .profile .form-group input{
@@ -473,10 +479,13 @@ body{
   border-color: #CE7E7D;
   border-width: 2px;
   color: #FFF8EB !important;
-  border:none;
   border-radius: 30px !important;
   size: 50px, 20px;
   width: 100%;
   text-align: center;
   align-content: center;
+}
+
+.edit-profile .btn .btn-profile{
+  background-color: #CE7E7D !important;
 }
