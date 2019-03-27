@@ -1,5 +1,5 @@
 <?php 
-   
+   session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,14 +50,14 @@
             <img src="images/cover/fotos_cover2.png" class="d-block w-100" alt="second slide">
               <div class="carousel-caption d-none d-md-block">
                 <h1>NEW PRODUCT</h1>
-                <button class="boton" onclick="window.location.href = 'signup.php';">SHOP NOW</button>
+                <button class="boton" onclick="window.location.href = 'cassettes.php';">SHOP NOW</button>
               </div>
             </div>
             <div class="carousel-item" id="slide3">
                 <img src="images/cover/fotos_cover3.png" class="d-block w-100" alt="third slide">
                 <div class="carousel-caption d-none d-md-block">
                   <h1>NEW PRODUCT</h1>
-                  <button class="boton-2" onclick="window.location.href = 'signup.php';">SHOP NOW</button>
+                  <button class="boton-2" onclick="window.location.href = 'vhs.php';">SHOP NOW</button>
               </div>
             </div>
         </div>
