@@ -9,6 +9,7 @@ $sql = "CREATE TABLE signdata(
   vari VARCHAR (100) NOT NULL
   )";
 mysqli_query($db, $sql);
+
 $sql = "CREATE TABLE vhs(
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(45) NOT NULL,

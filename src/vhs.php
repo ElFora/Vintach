@@ -70,28 +70,27 @@ session_start();
 	</div>	
 
 	<!--Catalog -->
+	<div class="container-fluid vhs-catalog"> 
+		<div class="row">
 <?php
 	$resultSet = $db->query('SELECT * FROM vhs ORDER BY nombre ASC')
-		or die($bd->error);
+		or die($db->error);
 	while($registro=$resultSet->fetch_array()):
-
 ?>
-<div class="container-fluid vhs-catalog"> 
-		<div class="row">
-			<div class="col-md-3 col-xs-12">
+			<div class="col-md-4 col-xs-12">
 			<div class="vhs-item">
-				<a href="checkout.php?usuario=<?php echo $registro['id'];?>"> <img src="/images/vhs/<?php echo $registro['imagen'];?>"></a>
-				<h4><br><?php echo $registro['nombre'];?></h4><br> <h5><?php echo $registro['director'];?></h5><br> 
+				<a href="checkout.php?usuario=<?php echo $registro['id'];?>"> <img src="/images/vhs/<?php echo $registro['imagen'];?>" 
+				style='width:100%'></a>
+				<h4><?php echo $registro['nombre'];?></h4> <h5><?php echo $registro['director'];?></h5>
 				<h6><?php echo "$".$registro['precio'];?></h6>
-				<button class="btn btn-custom">buy</button>
+				<button class="btn btn-custom" href="checkout.php">buy</button><br><br>
 			</div>
 			</div>
-		</div>
-</div>
 <?php
 	endwhile;
 ?>
-
+		</div>
+</div>
 
 <!-- 
 <div class="container-fluid vhs-catalog"> 

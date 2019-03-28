@@ -102,6 +102,9 @@
       </li>
         <a class="nav-link" href="users.php">USERS</a>
       </li>
+      </li>
+        <a class="nav-link" href="stock.php">INVENTORY</a>
+      </li>
     </ul>
     <div class="yellow-font">
     <ul class="navbar-nav" id="credentials">
