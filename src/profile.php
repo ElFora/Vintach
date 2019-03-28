@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,23 +40,21 @@
     </div>
     <div class="col-lg-6">
       <div class="form-thing">
-          <form class="profile-form">
+          <form action="profile-edit.php" method="post" enctype="multipart/form-data" class="profile-form">
               <div class="form-group">
                 <label for="formGroupExampleInput">Name</label>
-                <input type="text" class="form-control" name="user-name" readonly class="form-control-plaintext" id="formGroupExampleInput" placeholder="Name">
+                <input type="text" class="form-control" name="user-name" readonly class="form-control-plaintext" id="formGroupExampleInput" placeholder="<?php echo $_SESSION['nombre']?>">
               </div>
               <div class="form-group">
                 <label for="formGroupExampleInput">Address</label>
-                <input type="text" class="form-control" name="user-address" readonly class="form-control-plaintext" id="formGroupExampleInput" placeholder="Address">
+                <input type="text" class="form-control" name="user-address" readonly class="form-control-plaintext" id="formGroupExampleInput" placeholder="<?php echo $_SESSION['adress']?>">
               </div>
               <div class="form-group">
                   <label for="staticEmail">Email</label>
-                  <input type="email" class="form-control" name="user-mail" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="name@example.com">
+                  <input type="email" class="form-control" name="user-mail" readonly class="form-control-plaintext" id="exampleFormControlInput1" placeholder="<?php echo $_SESSION['email']?>">
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" name="user-pwd" readonly class="form-control-plaintext" id="exampleInputPassword1" placeholder="Password">
-                <br>
+                
                 <button type="submit" name="edit-btn" class="btn btn-custom edit-button">edit profile</button>
               </div>
           </form>

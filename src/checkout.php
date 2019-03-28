@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +14,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link href="css/estilos.css" rel="stylesheet">
 
-    <title>VHS - Vintach</title>
+    <title>Checkout</title>
 </head>
 
 <nav>
@@ -26,14 +29,54 @@
 <div class="rectangle"></div>
 </div>    
 </div>
-</div>
+
 
 <div class="row">
+    <div class="col-lg-6">
+    <img src="images/vhs/fotos_vhs1.png" alt="NOT FOUND" style="width:100%;">
+    </div>
+    <div class="col-lg-6">
+    <h2>E.T.</h2>
+    <h4>steven spielberg</h4>
+    <h6 id="precio">$22.80</h6>
+    <h6>quantity</h6>
+    <div class="quantity">
+     <button type="button" class="botones" onclick="addone()">+</button>          <h6 id="numero">1</h6> 
 
-<?php
-echo('HOLA PLEBADA!')
-?>
+     <button type="button" class="botones" onclick="menosone()"><h6>-</h6></button>
+    </div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="eljoshua@live.com">
+      <input type="hidden" name="item_name" value="Donation">
+      <input type="hidden" name="item_number" value="1">
+      <input type="hidden" name="amount" value="9.00">
+      <input type="hidden" name="no_shipping" value="0">
+      <input type="hidden" name="no_note" value="1">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="lc" value="AU">
+      <input type="hidden" name="bn" value="PP-BuyNowBF">
+      <input type="image" src="https://www.paypal.com/en_AU/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online.">
+      <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+     </form>
+    <script type="text/javascript">
+    function addone(){
+        var foo=document.getElementById('numero').innerHTML;
+        foo++;
+        document.getElementById('numero').innerHTML = foo;
+    }
+    
+    function menosone(){
+        var foo=document.getElementById('numero').innerHTML;
+        foo--;
+        document.getElementById('numero').innerHTML = foo;
+    }
+    
+    </script>
 
+
+</div>
+</div>
 </div>
 </body>
 </html>

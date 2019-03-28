@@ -20,11 +20,13 @@
     echo 'Usuario o correo ya existen';
     exit();
   }else{
-   $query = "INSERT INTO signdata (nombre, adress, email, pswrd)
-             VALUES ('$nombre','$direccion','$correo','$contrasena')";
+   $query = "INSERT INTO signdata (nombre, adress, email, pswrd, vari)
+             VALUES ('$nombre','$direccion','$correo','$contrasena', 'cliente')";
    $db->query($query);
+   header("location: index.php"); 
    echo 'EXITO! USUARIO REGISTRADO';
    exit();
+   
   }
 
 

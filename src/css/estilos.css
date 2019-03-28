@@ -364,6 +364,7 @@ body{
 
 .cassettes-trending img{
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .cassettes-trending .rectangle4 {
@@ -574,4 +575,73 @@ body{
   width: 100%;
   text-align: center;
   align-content: center;
+}
+
+/* CHECKOUT*/
+
+.checkout{
+  background-color:#FFF8EB;
+  vertical-align: center;
+  text-align:center;
+
+}
+
+.checkout-title{
+  margin-top:100px;
+  color:#5B4350;
+}
+
+.checkout img{
+  padding-top:20px;
+}
+
+.checkout h2{
+padding-top:30px;
+}
+
+.checkout .rectangle{
+  height: 24px;
+  width: 141px;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -10px;
+  background-color: #CE7E7D;
+  z-index: -1;
+  
+}
+
+.checkout a h5{
+  background-color: #CE7E7D;
+  color:#FCD995;
+  padding:7px;
+  border-radius: 30px;
+  margin-left:150px;
+  margin-right:150px;
+}
+
+.checkout a h5:hover{
+  background-color:#C25D5C;
+  color:#FFF8EB;
+  padding:7px;
+  border-radius: 30px;
+  margin-left:150px;
+  text-decoration: none;
+}
+ 
+.botones{
+  background-color:#5B4350;
+  color:#FFF8EB;
+  padding:7px;
+  margin-bottom:8px;
+}
+
+/*Users table*/
+thead tr th{
+  color: #FCD995 !important;
+}
+
+button .btn .btn-users{
+  background: #FFF8EB !important;
+  color: #5B4350 !important;
+  border-radius: 30px;
 }

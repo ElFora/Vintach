@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,24 +41,26 @@
     <div class="col-lg-6">
       <div class="form-thing">
           <form action="cambio.php" method="post" class="profile-form">
+          
               <div class="form-group">
+                
                 <label for="formGroupExampleInput">Name</label>
-                <input type="text" class="form-control" name="user-name" id="formGroupExampleInput" placeholder="Name" value="<?php echo $_SESSION['nombre']; ?>">
+               
               </div>
+              <input type="text" class="form-control" name="user-name" id="formGroupExampleInput" placeholder="<?php echo $_SESSION['nombre']; ?>" >
               <div class="form-group">
                 <label for="formGroupExampleInput">Address</label>
-                <input type="text" class="form-control" name="user-address" id="formGroupExampleInput" placeholder="Address"  value="<?php echo $_SESSION['adress']; ?>">
+               
               </div>
+              <input type="text" class="form-control" name="user-address" id="formGroupExampleInput" placeholder="Address"  value="<?php echo $_SESSION['adress']; ?>">
               <div class="form-group">
                   <label for="staticEmail">Email</label>
-                  <input type="email" class="form-control" name="user-mail" id="exampleFormControlInput1" placeholder="name@example.com" value="<?php echo $_SESSION['email']; ?>">
+                  
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" name="user-pwd" id="exampleInputPassword1" placeholder="Password" value="<?php echo $_SESSION['pswrd']; ?>">
-              </div>
+              <input type="email" class="form-control" name="user-mail" id="exampleFormControlInput1" placeholder="name@example.com" value="<?php echo $_SESSION['email']; ?>">
+             
               <div class="edit-profile">
-                <button type="button" name="register-btn" class="btn btn-edit">edit profile</button>
+                <button type="submit" name="register-btn" class="btn btn-edit">edit profile</button>
               </div>
           </form>
       </div>

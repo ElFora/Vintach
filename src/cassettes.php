@@ -1,5 +1,5 @@
 <?php 
-   
+   session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -162,7 +162,7 @@
 				</div>
 			</div>
 		</div><br>
-		<a class="navbar-brand" href="#">VINTACH</a>
+		<a class="navbar-brand" href="index.php">VINTACH</a>
 	</div>	   
 </body>
 </html>
