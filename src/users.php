@@ -53,7 +53,7 @@ session_start();
   if($result-> num_rows > 0){
     while($row = $result-> fetch_assoc()) {
       echo "<tr><td>" . $row["id"] ."</td><td>". $row["nombre"] . "</td><td>" . $row["adress"] ."</td><td>".  $row["email"] . "</td><td>"; 
-      ?><button onclick="return confirm('Are you sure you want to delete this?')" lass="btn btn-users" href="delete.php">delete</button> <?php
+      ?><button href="delete.php">delete</button> <?php
       ;
     }
     echo "</table>";
