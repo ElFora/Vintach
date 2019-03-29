@@ -37,6 +37,7 @@ session_start();
       <th scope="col">NAME</th>
       <th scope="col">MAIL</th>
       <th scope="col">ADDRESS</th>
+      <th scope="col">ACTION</th>
       <th scope="col"> </th>
     </tr>
   </thead>

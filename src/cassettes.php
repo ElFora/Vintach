@@ -23,7 +23,8 @@
 <body>
     
     <!-- Nav bar -->
-    <?php include("includes/nav.php");?>
+		<?php include("includes/nav.php");?>
+		<?php include("db.php");?>
     <!-- End Nav bar -->
 
 		<!-- Cover Picture -->
@@ -66,104 +67,29 @@
 
 	<!--Catalog -->
 
-<div class="container-fluid cassettes-catalog"> 
-	<div class="row">
-			<div class="col-lg-4 col-sm-12">
-				<div class="cassette-item">
-						<img src="/images/cassette/fotos_cass3.png" style="width:100%">
-						<h4>THE CLASH</h4>
-						<h5>the clash</h5>
-						<h6>$12.50</h6>
-						<br>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-sm-12">
-				<div class="cassette-item">
-						<img src="/images/cassette/fotos_cass4.png" style="width:100%">
-						<h4>ANGELO BADALAMENT</h4>
-						<h5>twin peaks ost</h5>
-						<h6>$20.00</h6>
-						<br>
-				</div>
-			</div>
-
-    	<div class="col-lg-4 col-sm-12">
-				<div class="cassette-item">
-						<img src="/images/cassette/fotos_cass5.png" style="width:100%">
-						<h4>DESCENDENTS</h4>
-						<h5>liveage!</h5>
-						<h6>$9.99</h6>
-						<br>
-				</div>
-			</div>
-		</div>
-			<!--new row -->
-			<div class="row">
-			<div class="col-lg-4 col-sm-12">
-				<div class="cassette-item">
-						<img src="/images/cassette/fotos_cass6.png" style="width:100%">
-						<h4>THE KINKS</h4>
-						<h5>one for the road</h5>
-						<h6>$12.50</h6>
-						<br>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-sm-12">
-				<div class="cassette-item">
-						<img src="/images/cassette/fotos_cass7.png" style="width:100%">
-						<h4>THE CURE</h4>
-						<h5>...happily ever after</h5>
-						<h6>$19.80</h6>
-						<br>
-				</div>
-			</div>
-
-    	<div class="col-lg-4 col-sm-12">
-				<div class="cassette-item">
-						<img src="/images/cassette/fotos_cass8.png" style="width:100%">
-						<h4>BLUE VELVET</h4>
-						<h5>blue velvet ost</h5>
-						<h6>$5.99</h6>
-						<br>
-				</div>
-			</div>
-	</div>
-		<!--new row -->
+	<div class="container-fluid cassettes-catalog"> 
 		<div class="row">
-			<div class="col-lg-4 col-sm-12">
-				<div class="cassette-item">
-						<img src="/images/cassette/fotos_cass9.png" style="width:100%">
-						<h4>DAVID BOWIE</h4>
-						<h5>hunky dory</h5>
-						<h6>$11.80</h6>
-						<br>
-				</div>
+<?php
+	$resultSet = $db->query('SELECT * FROM cassettes ORDER BY nombre ASC')
+		or die($db->error);
+	while($registro=$resultSet->fetch_array()):
+?>
+			<div class="col-md-4 col-xs-12">
+			<div class="cassette-item">
+				<a href="checkout.php?usuario=<?php echo $registro['id'];?>"> <img src="/images/cassette/<?php echo $registro['imagen'];?>" 
+				style='width:100%'></a>
+				<h4><?php echo $registro['nombre'];?></h4> <h5><?php echo $registro['artistas'];?></h5>
+				<h6><?php echo "$".$registro['precio'];?></h6>
+				<button class="btn btn-custom" href="checkout.php">buy</button><br><br>
 			</div>
-
-			<div class="col-lg-4 col-sm-12">
-				<div class="cassette-item">
-						<img src="/images/cassette/fotos_cass10.png" style="width:100%">
-						<h4>JOHN WILLIAMS</h4>
-						<h5>jurassic park ost</h5>
-						<h6>$30.80</h6>
-						<br>
-				</div>
 			</div>
-
-    	<div class="col-lg-4 col-sm-12">
-				<div class="cassette-item">
-						<img src="/images/cassette/fotos_cass11.png" style="width:100%">
-						<h4>U2</h4>
-						<h5>boy</h5>
-						<h6>$3.99</h6>
-						<br>
-				</div>
-			</div>
-		</div><br>
+<?php
+	endwhile;
+?>
+		</div>
+		<br>
 		<a class="navbar-brand" href="index.php">VINTACH</a>
-	</div>	   
+</div>
 </body>
 </html>
 

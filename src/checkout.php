@@ -14,18 +14,19 @@ session_start();
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<link href="css/estilos.css" rel="stylesheet">
 
-    <title>Checkout</title>
+    <title>My Cart</title>
 </head>
 
 <nav>
 <?php include("includes/nav.php");?>
+<?php include("db.php");?>
 </nav>
 
 <body class="checkout">    
 <div class="container">
 <div class="row">
 <div class="checkout-title">
-<h1>CHECKOUT</h1>
+<h1>SHOPPING CART</h1>
 <div class="rectangle"></div>
 </div>    
 </div>
@@ -41,9 +42,7 @@ session_start();
     <h6 id="precio">$22.80</h6>
     <h6>quantity</h6>
     <div class="quantity">
-     <button type="button" class="botones" onclick="addone()">+</button>          <h6 id="numero">1</h6> 
-
-     <button type="button" class="botones" onclick="menosone()"><h6>-</h6></button>
+     <button type="button" class="botones" onclick="addone()">+</button><h6 id="numero">1</h6><button type="button" class="botones" onclick="menosone()"><h6>-</h6></button>
     </div>
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
       <input type="hidden" name="cmd" value="_xclick">

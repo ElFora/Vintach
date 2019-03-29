@@ -2,6 +2,25 @@
 
   include 'db.php';
 
+  // ///asignando los campos del formulario a una variable
+  // $nombre = "";
+  // $direccion = "";
+  // $correo = "";
+  // $contrasena = "";
+  // $contrasena = MD5($contrasena);
+
+  // if(isset($_POST['register-btn'])){
+  //   $nombre = $_POST['user-name'];
+  //   $direccion =  $_POST['user-address'];
+  //   $correo =  $_POST['user-mail'];
+  //   $contrasena =  $_POST['user-pwd'];
+
+  //   $query = "INSERT INTO signdata (nombre, adress, email, pswrd, vari)
+  //   VALUES ('$nombre','$direccion','$correo','$contrasena', 'cliente')";
+  //   mysqli_query($db, $query);
+  //   header('location: index.php');
+  // }
+  
   ///asignando los campos del formulario a una variable
   $nombre = $_POST['user-name'];
   $direccion = $_POST['user-address'];

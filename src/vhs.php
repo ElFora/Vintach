@@ -14,11 +14,9 @@ session_start();
     <!-- <script src="js-bootstrap/bootstrap.js"></script> -->
     <!-- <script src="js-bootstrap/bootstrap.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- <link href="css/custom.scss" rel="stylesheet"> -->
     <link href="css/estilos.css" rel="stylesheet">
     <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="icons/favicon.png"/>
-    <!-- <link rel="shortcut icon" type="image/png" href="http://index.php/favicon.png"/> -->
 
 
     <title>VHS</title>
@@ -83,112 +81,29 @@ session_start();
 				style='width:100%'></a>
 				<h4><?php echo $registro['nombre'];?></h4> <h5><?php echo $registro['director'];?></h5>
 				<h6><?php echo "$".$registro['precio'];?></h6>
-				<button class="btn btn-custom" href="checkout.php">buy</button><br><br>
+				<button class="modal-btn">details</button><br><br>
 			</div>
 			</div>
+			<div class="bg-modal">
+			<div class="modal-content">
+			<div class="col-lg-12 col-md-12">
+			<span class="close-btn">&times;</span><br>
+			<div class=vhs>
+					<img src="images/vhs/fotos_vhs2-24.png" style="width:100%">
+					<h4>555</h4>
+					<h5>Wally Koz</h5>
+					<h6>$30.00</h6>
+				</div>
+				<button id="buy-btn" class="btn"href="checkout.php">buy</button>
+			</div>
+		</div>
+		</div>
 <?php
 	endwhile;
 ?>
-		</div>
-</div>
-
-<!-- 
-<div class="container-fluid vhs-catalog"> 
-	<div class="row">
-			<div class="col-lg-4 col-sm-12">
-				<div class="vhs-item">
-						<img src="/images/vhs/fotos_vhs3.png" style="width:100%">
-						<h4>THE BREAKFAST CLUB</h4>
-						<h5>john hughes</h5>
-						<h6>$15.00</h6>
-						<br>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-sm-12">
-				<div class="vhs-item">
-						<img src="/images/vhs/fotos_vhs4.png" style="width:100%">
-						<h4>BLADE RUNNER</h4>
-						<h5>ridley scott</h5>
-						<h6>$20.50</h6>
-						<br>
-				</div>
-			</div>
-
-    	<div class="col-lg-4 col-sm-12">
-				<div class="vhs-item">
-						<img src="/images/vhs/fotos_vhs5.png" style="width:100%">
-						<h4>PRETTY WOMAN</h4>
-						<h5>garry Marshall</h5>
-						<h6>$7.55</h6>
-						<br>
-				</div>
-			</div>
-		</div>
-			<div class="row">
-			<div class="col-lg-4 col-sm-12">
-				<div class="vhs-item">
-						<img src="/images/vhs/fotos_vhs6.png" style="width:100%">
-						<h4>BACK TO THE FUTURE </h4>
-						<h5>robert zemeckis</h5>
-						<h6>$7.80</h6>
-						<br>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-sm-12">
-				<div class="vhs-item">
-						<img src="/images/vhs/fotos_vhs7.png" style="width:100%">
-						<h4>JURASSIC PARK</h4>
-						<h5>steven spielberg</h5>
-						<h6>$12.50</h6>
-						<br>
-				</div>
-			</div>
-
-    	<div class="col-lg-4 col-sm-12">
-				<div class="vhs-item">
-						<img src="/images/vhs/fotos_vhs8.png" style="width:100%">
-						<h4>A NIGHTMARE ON ELM STREET</h4>
-						<h5>wes craven</h5>
-						<h6>$12.55</h6>
-						<br>
-				</div>
-			</div>
-	</div>
-		<div class="row">
-			<div class="col-lg-4 col-sm-12">
-				<div class="vhs-item">
-						<img src="/images/vhs/fotos_vhs9.png" style="width:100%">
-						<h4>JAWS</h4>
-						<h5>steven spielberg</h5>
-						<h6>$22.80</h6>
-						<br>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-sm-12">
-				<div class="vhs-item">
-						<img src="/images/vhs/fotos_vhs10.png" style="width:100%">
-						<h4>PRETTY IN PINK</h4>
-						<h5>john hughes</h5>
-						<h6>$7.80</h6>
-						<br>
-				</div>
-			</div>
-
-    	<div class="col-lg-4 col-sm-12">
-				<div class="vhs-item">
-						<img src="/images/vhs/fotos_vhs11.png" style="width:100%">
-						<h4>ALIEN</h4>
-						<h5>ridley scott</h5>
-						<h6>$12.99</h6>
-						<br>
-				</div>
-			</div>
-		</div><br>
+		<br>
 		<a class="navbar-brand" href="index.php">VINTACH</a>
-	</div>	    -->
+</div>
 </body>
 </html>
 
@@ -200,3 +115,15 @@ $(document).ready(function(){
         },  
     });    
 });
+
+var modal = document.getElementById('modal-content');
+var modalBtn = document.getElementById('modal-btn');
+var closeBtn = document.getElementById('close-btn');
+
+modalBtn.addEventListener('click', openModal);
+
+function openModal(){
+  modal.style.display = 'block';
+}
+
+</script>

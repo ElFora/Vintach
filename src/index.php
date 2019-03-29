@@ -94,7 +94,7 @@
             <div class="carousel-item active" id="slide1">
             <img src="images/cover/fotos_cover1.png" class="d-block w-100" alt="first slide">
               <div class="carousel-caption d-none d-md-block">
-                <h1>OLD IS NEW</h1>
+                <h1>THE OLD IS NEW</h1>
                 <button class="boton" onclick="window.location.href = 'vhs.php';">EXPLORE</button>
                 <!-- <button type="button" class="btn btn-primary btn-lg">BECOME VINTACHE</button> -->
               </div>

@@ -8,7 +8,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js-bootstrap/bootstrap.js"></script>
@@ -26,20 +26,21 @@ session_start();
     <!-- Nav bar -->
     <?php include("includes/nav.php");?>
     <?php include("db.php");?>
+    <?php //include("alta-productos.php");?>
     <!-- End Nav bar -->
-
-    <!-- Container -->
-    <br><br><br><br>
+    <br><br><br>
+    <!-- TABLES -->
 <div class="container users">
 <table class="table table-dark">
   <thead>
     <tr>
       <th scope="col">ID</th>
       <th scope="col">NAME</th>
-      <th scope="col">ARTIST/DIRECTOR</th>
+      <th scope="col">DIRECTOR</th>
       <th scope="col">PRICE</th>
       <th scope="col">IN STOCK</th>
       <th scope="col">SOLD</th>
+      <th scope="col">ACTION</th>
     </tr>
   </thead>
   <?php
@@ -53,8 +54,9 @@ session_start();
 
   if($result-> num_rows > 0){
     while($row = $result-> fetch_assoc()) {
-      echo "<tr><td>" . $row["id"] ."</td><td>". $row["nombre"] . "</td><td>" . $row["director"] ."</td><td>".  $row["cantidad"] . "</td><td>".  $row["vendidos"] . "</td><td>"; 
-      ?><button onclick="return confirm('Are you sure you want to delete this?')" lass="btn btn-users" href="delete.php">delete</button> <?php
+      echo "<tr><td>" . $row["id"] ."</td><td>". $row["nombre"] . "</td><td>" . $row["director"] ."</td><td>$". $row["precio"]."</td><td>". $row["cantidad"] . "</td><td>".  $row["vendidos"] . "</td><td>"; 
+      ?>
+      <a href="alta-productos.php?del=<?php echo $row['id'];?>"><button >delete</button> </a><?php
       ;
     }
     echo "</table>";
@@ -62,15 +64,124 @@ session_start();
   else{
     echo "0 result";
   }
-  $conn-> close();
+  $conn-> close();  
 ?>
-     
+
   
 </table>
 </div>
-<br><br>
-    <!-- Container -->
+<br><br><br><br>
 
+    <!-- INSERT -->
+    <div class="container container-insert">
+      <h1>UPLOAD NEW VHS</h1>
+    <form class="form-insert" class="sign-up-form" action="alta-productos.php" method="post">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputName">NAME</label>
+          <input type="text" name="nombre" class="form-control" id="inputNAme" placeholder="name">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputPrice">PRICE</label>
+          <input type="text" name="precio" class="form-control" id="inputPrice" placeholder="price">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputDirector">DIRECTOR</label>
+          <input type="text" name="director" class="form-control" id="inputDirector" placeholder="director's name">
+        </div>
+      </div>
+      <div class="form-row">
+      <div class="form-group col-md-4">
+          <label for="inputImage">IMAGE NAME</label>
+          <input type="text" name="imagen" class="form-control" id="inputImage" placeholder="image name">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputStock">IN STOCK</label>
+          <input type="text" name="cantidad" class="form-control" id="inputStock" placeholder="enter a number">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputSold">SOLD</label>
+          <input type="text" name="vendidos" class="form-control" id="inputSold"  placeholder="enter a number">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" name="save">SAVE</button>
+    </form>
+</div>
+    <!-- Container -->
+<div class="container users">
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">NAME</th>
+      <th scope="col">ARTIST</th>
+      <th scope="col">PRICE</th>
+      <th scope="col">IN STOCK</th>
+      <th scope="col">SOLD</th>
+      <th scope="col">ACTION</th>
+    </tr>
+  </thead>
+  <?php
+  $conn = mysqli_connect("db", "root", "root", "main");
+  if($conn-> connect_error) {
+    die("Connection failed:". $conn-> connect_error);
+  }
+
+  $sql = "SELECT id, nombre, precio, artistas, cantidad, vendidos from cassettes";
+  $result = $conn-> query($sql);
+
+  if($result-> num_rows > 0){
+    while($row = $result-> fetch_assoc()) {
+      echo "<tr><td>" . $row["id"] ."</td><td>". $row["nombre"] . "</td><td>" . $row["artistas"] ."</td><td> $". $row['precio']."</td><td>".  $row["cantidad"] . "</td><td>".  $row["vendidos"] . "</td><td>"; 
+      ?><button onclick="return confirm('Are you sure you want to delete this?')" lass="btn btn-users" href="alta-productos.php?del=<?php echo $row['artistas'];?>">delete</button> <?php
+      ;
+    }
+    echo "</table>";
+  } 
+  else{
+    echo "0 result";
+  }
+  $conn-> close();  
+?>
+</table>
+</div>
+<br><br><br><br><br><br>
+
+ <!-- INSERT -->
+ <div class="container container-insert">
+      <h1>UPLOAD NEW CASSETTE</h1>
+    <form class="form-insert" class="sign-up-form" action="alta-productos.php" method="post">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputName">NAME</label>
+          <input type="text" name="cass_name" class="form-control" id="inputNAme" placeholder="name">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputPrice">PRICE</label>
+          <input type="text" name="cass_precio" class="form-control" id="inputPrice" placeholder="price">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputDirector">ARTIST</label>
+          <input type="text" name="artista" class="form-control" id="inputDirector" placeholder="artist's name">
+        </div>
+      </div>
+      <div class="form-row">
+      <div class="form-group col-md-4">
+          <label for="inputImage">IMAGE NAME</label>
+          <input type="text" name="cass_imagen" class="form-control" id="inputImage" placeholder="image name">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputStock">IN STOCK</label>
+          <input type="text" name="cass_cantidad" class="form-control" id="inputStock" placeholder="enter a number">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputSold">SOLD</label>
+          <input type="text" name="cass_vendidos" class="form-control" id="inputSold"  placeholder="enter a number">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" name="save-1">SAVE</button>
+    </form>
+</div>
 
 </body>
 </html>

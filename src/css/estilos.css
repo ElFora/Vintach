@@ -285,7 +285,6 @@ body{
   margin-left: -10px;
   background-color: #CE7E7D;
   z-index: -1;
-
 }
 
 .log-in .btn-login{
@@ -644,4 +643,115 @@ button .btn .btn-users{
   background: #FFF8EB !important;
   color: #5B4350 !important;
   border-radius: 30px;
+}
+
+/* Alta */
+
+.add div{
+  width:50%;
+  padding-right: 100px;
+  text-align: center;
+  
+}
+
+.table .table-dark{
+  margin-top:20px !important;
+}
+
+.container-insert{
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.container-insert h1{
+  color: #FFF8EB;
+}
+
+.container-insert label{
+  color: #FFF8EB;
+}
+
+.container-insert input{
+  color:#5B4350;
+  background-color: #FCD995;
+}
+
+.container-insert input:focus{
+  color:#FFF8EB;
+  background-color: #EAC06E;
+}
+
+.container-insert button{
+  color:#5B4350;
+  background-color: #FCD995;
+  border: none;
+}
+
+.container-insert button:hover{
+  color:#FFF8EB;
+  background-color: #C25D5C;
+  border: none;
+}
+
+/* Modal */
+
+.bg-modal{
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0 ,0, 0.5);
+  display:none;
+  position: fixed;
+  z-index:1;
+  top: 0;
+  left: 0;
+  overflow:auto;
+}
+
+.modal-content{
+ background-color: #FFF8EB;
+ margin: 20% auto;
+ width: 50%;
+ padding: 20px;
+ box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+ align-content: center;
+ text-align: center;
+}
+
+.modal-content .close-btn{
+  float: right;
+  cursor: pointer;
+}
+
+.modal-content .close-btn:hover{
+  float: right;
+  cursor: pointer;
+  color: #CE7E7D;
+}
+
+.modal-content .close-btn:focus{
+  float: right;
+  cursor: pointer;
+  color: #CE7E7D;
+}
+
+.modal-content h4{
+  color: #5B4350;
+}
+.modal-content h5{
+  color: #5B4350;
+}
+
+.modal-btn{
+  background-color: #EAC06E;
+  color: #5B4350;
+  border-radius: 0;
+  padding:5px 10px;
+}
+
+.modal-btn:focus{
+  background-color: #EAC06E;
+  color: #5B4350;
+  border-radius: 0;
+  padding:5px 10px;
+  border:none;
 }
